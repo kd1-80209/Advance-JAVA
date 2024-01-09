@@ -1,0 +1,52 @@
+package com.sunbeam.beans;
+
+import com.sunbeam.daos.CandidateDao;
+import com.sunbeam.daos.CandidateDaoImpl;
+
+public class VotingDoneBean {
+
+	private int candId;
+	private int userId;
+	private String message;
+
+	public VotingDoneBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getCandId() {
+		return candId;
+	}
+
+	public void setCandId(int candId) {
+		this.candId = candId;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public void doneVoting() {
+
+		try (CandidateDao candDao = new CandidateDaoImpl()) {
+
+			int count = candDao.incrementVote(candId);
+			
+			if(count == 1) {
+				
+				this.message = "Congratulations !!! Your Vote is Registered";
+			}
+			else {
+				this.message = "Sorry... Some Error Occurred";
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

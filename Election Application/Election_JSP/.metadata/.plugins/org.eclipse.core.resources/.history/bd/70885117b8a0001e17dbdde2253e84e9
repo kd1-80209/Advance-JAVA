@@ -1,0 +1,16 @@
+package com.sunbeam.beans;
+
+import java.util.List;
+
+import com.sunbeam.pojos.Candidate;
+
+public class CandidateListBean {
+
+	private List<Candidate> candList;
+	private String message;
+
+	public CandidateListBean() {
+
+		this.candList = null;
+	}
+}

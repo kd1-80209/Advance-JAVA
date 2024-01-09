@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Candidate List</title>
+</head>
+<body>
+
+	<h2>Hello, ${lb.user.firstName} ${lb.user.lastName}</h2>
+	<hr>
+
+	<center>
+		<table>
+			<thead>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Party</th>
+				<th>Votes</th>
+				<th></th>
+			</thead>
+		</table>
+	</center>
+
+
+
+</body>
+</html>

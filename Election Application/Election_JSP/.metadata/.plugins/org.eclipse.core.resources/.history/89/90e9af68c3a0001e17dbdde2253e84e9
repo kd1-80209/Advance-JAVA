@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Candidate List</title>
+</head>
+<body>
+
+	<h2>Hello, ${lb.user.firstName} ${lb.user.lastName}</h2>
+	<hr>
+
+	<jsp:useBean id="cl" class="com.sunbeam.beans.CandidateListBean"></jsp:useBean>
+
+	${cl.fetchCand()}
+
+	<form method="post" action="vote.jsp">
+		<center>
+			<br> <br> <br>
+			<table border="1" cellspacing="0">
+				<thead>
+					<th></th>
+					<th>Name</th>
+					<th>Party</th>
+
+				</thead>
+				<tbody>
+					<c:forEach var="c" items="${cl.candList}">
+						<tr>
+							<td><input type="radio" name="candidate" value="${c.id}"></td>
+							<td>${c.name}</td>
+							<td>${c.party}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+		</center>
+	</form>
+</body>
+</html>

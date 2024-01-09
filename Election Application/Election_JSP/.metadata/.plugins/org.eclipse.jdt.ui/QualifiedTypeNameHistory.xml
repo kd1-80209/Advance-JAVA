@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sunbeam.pojos.Candidate"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.CandidateDaoImpl"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.CandidateDao"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.UserDao"/>
+    <fullyQualifiedTypeName name="com.sunbeam.pojos.User"/>
+</qualifiedTypeNameHistroy>

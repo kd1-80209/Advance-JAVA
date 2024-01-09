@@ -1,0 +1,9 @@
+package com.sunbeam.beans;
+
+import java.util.List;
+
+public class CandidateListBean {
+
+	private List<Candidate> candList;
+
+}

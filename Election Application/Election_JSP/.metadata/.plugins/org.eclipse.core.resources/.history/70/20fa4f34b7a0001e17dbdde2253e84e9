@@ -1,0 +1,10 @@
+package com.sunbeam.beans;
+
+public class CandidateListBean {
+
+	private String firstName;
+	private String lastName;
+	private String party;
+	private String message;
+
+}
